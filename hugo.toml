@@ -2,10 +2,10 @@
 # 部署到 Cloudflare Pages 后，把 baseURL 改成你的真实域名
 # 注意：结尾必须带 /
 # ============================================
-baseURL = "https://example.com/"
+baseURL = "https://lingchenyinmeng.com/"
 locale = "zh-CN"
 defaultContentLanguage = "zh"
-title = "我的博客"
+title = "聆尘吟梦"
 theme = "PaperMod"
 enableRobotsTXT = true
 hasCJKLanguage = true
@@ -15,13 +15,13 @@ summaryLength = 70
   pagerSize = 20
 
 [params]
-  author = "你的名字"
-  description = "记录与思考"
-  defaultTheme = "auto"          # auto / light / dark
+  author = "聆尘吟梦"
+  description = "聆尘吟梦，记录与思考"
+  defaultTheme = "auto"
   ShowReadingTime = true
   ShowShareButtons = false
   ShowCodeCopyButtons = true
-  ShowToc = true                 # 文章目录
+  ShowToc = true
   TocOpen = false
   ShowBreadCrumbs = true
   ShowPostNavLinks = true
@@ -29,12 +29,8 @@ summaryLength = 70
   DateFormat = "2006-01-02"
 
   [params.homeInfoParams]
-    Title = "你好，我是 XXX"
+    Title = "你好，我是聆尘吟梦"
     Content = "在这里记录学习、写作和生活。"
-
-[[params.socialIcons]]
-  name = "github"
-  url = "https://github.com/你的用户名"
 
 [[params.socialIcons]]
   name = "rss"
@@ -45,7 +41,7 @@ summaryLength = 70
     noClasses = false
     lineNos = false
   [markup.goldmark.renderer]
-    unsafe = true                # 允许文章里写原生 HTML
+    unsafe = true
 
 [taxonomies]
   tag = "tags"
