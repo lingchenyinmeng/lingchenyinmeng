@@ -1,6 +1,6 @@
 # ============================================
-# 部署到 Cloudflare Pages 后，把 baseURL 改成你的真实域名
-# 注意：结尾必须带 /
+# 站点基础配置
+# baseURL 结尾必须带 /
 # ============================================
 baseURL = "https://lingchenyinmeng.com/"
 locale = "zh-CN"
@@ -16,7 +16,7 @@ summaryLength = 70
 
 [params]
   author = "聆尘吟梦"
-  description = "聆尘吟梦，记录与思考"
+  description = "聆尘吟梦的个人博客，记录学习、思考与生活。"
   defaultTheme = "auto"
   ShowReadingTime = true
   ShowShareButtons = false
@@ -28,13 +28,39 @@ summaryLength = 70
   ShowRssButtonInSectionTermList = true
   DateFormat = "2006-01-02"
 
+  # 首页那块自我介绍（想改文案就改这几行）
   [params.homeInfoParams]
     Title = "你好，我是聆尘吟梦"
-    Content = "在这里记录学习、写作和生活。"
+    Content = "在这里记录学习、思考，和生活里一些值得留下的东西。"
 
 [[params.socialIcons]]
   name = "rss"
   url = "index.xml"
+
+# ============================================
+# 顶部导航菜单
+# 想增删条目，复制一段 [[menu.main]] 改 name 和 url 即可
+# 数字越小越靠左
+# ============================================
+[[menu.main]]
+  name = "首页"
+  url = "/"
+  weight = 1
+
+[[menu.main]]
+  name = "文章"
+  url = "/posts/"
+  weight = 2
+
+[[menu.main]]
+  name = "标签"
+  url = "/tags/"
+  weight = 3
+
+[[menu.main]]
+  name = "关于"
+  url = "/about/"
+  weight = 4
 
 [markup]
   [markup.highlight]
